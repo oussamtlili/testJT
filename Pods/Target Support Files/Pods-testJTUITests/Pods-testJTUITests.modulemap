@@ -1,0 +1,6 @@
+framework module Pods_testJTUITests {
+  umbrella header "Pods-testJTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
