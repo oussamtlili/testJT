@@ -9,6 +9,8 @@ jobs:
     steps:
       - checkout
       - run:
+          command: gem install json -v '2.2.0' --source 'https://rubygems.org/'
+      - run:
           command: bundle install
       - run: 
           command: bundle exec danger --verbose
