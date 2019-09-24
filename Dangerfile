@@ -10,7 +10,7 @@ warn("Big PR") if git.lines_of_code > 500
 #fail("Your forget TODO in code") if b.any? { |file|  File.readlines(file).grep("TODO").size > 0 }
 
 # Warn when PR don't contains unit tests
-warn("Unit Tests are very important") if (git.added_files + git.modified_files).all?{ | #file| file.include? "test" == false }
+warn("Unit Tests are very important") if (git.added_files + git.modified_files).all? { |file| file.include? "test" == false }
 
 # Fail when developer push .orig files
 fail("Don't push .orig files") if git.added_files.any? {|file| files.end_with? "orig" }
