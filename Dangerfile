@@ -11,7 +11,7 @@ fail("Your forget // TODO in code") if (git.added_files + git.modified_files).an
 # Warn when PR don't contains unit tests
 warn("Unit Tests are very important") if (git.added_files + git.modified_files).all?{ | file| file.include? "test" == false }
 
-# Fail when developer push .orig file
+# Fail when developer push .orig files
 fail("Don't push .orig files") if git.added_files.any? {|file| files.end_with? "orig" }
 
 
