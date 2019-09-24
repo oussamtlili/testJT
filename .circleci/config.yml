@@ -10,8 +10,6 @@ jobs:
       - checkout
       - run:
           command: bundle install
-      - run:
-          command: bundle exec danger init
       - run: 
           command: bundle exec danger --verbose
   test:
