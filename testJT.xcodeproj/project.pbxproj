@@ -15,7 +15,7 @@
 		FC3FDD462338BD22003FD49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDD442338BD22003FD49B /* Main.storyboard */; };
 		FC3FDD482338BD23003FD49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDD472338BD23003FD49B /* Assets.xcassets */; };
 		FC3FDD4B2338BD23003FD49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDD492338BD23003FD49B /* LaunchScreen.storyboard */; };
-		FC3FDD562338BD23003FD49B /* testJTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDD552338BD23003FD49B /* testJTTests.swift */; };
+		FC3FDD562338BD23003FD49B /* JTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDD552338BD23003FD49B /* JTTests.swift */; };
 		FC3FDD612338BD23003FD49B /* testJTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDD602338BD23003FD49B /* testJTUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		FC3FDD4A2338BD23003FD49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3FDD4C2338BD23003FD49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3FDD512338BD23003FD49B /* testJTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testJTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC3FDD552338BD23003FD49B /* testJTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJTTests.swift; sourceTree = "<group>"; };
+		FC3FDD552338BD23003FD49B /* JTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTTests.swift; sourceTree = "<group>"; };
 		FC3FDD572338BD23003FD49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3FDD5C2338BD23003FD49B /* testJTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testJTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FDD602338BD23003FD49B /* testJTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJTUITests.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		FC3FDD542338BD23003FD49B /* testJTTests */ = {
 			isa = PBXGroup;
 			children = (
-				FC3FDD552338BD23003FD49B /* testJTTests.swift */,
+				FC3FDD552338BD23003FD49B /* JTTests.swift */,
 				FC3FDD572338BD23003FD49B /* Info.plist */,
 			);
 			path = testJTTests;
@@ -413,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3FDD562338BD23003FD49B /* testJTTests.swift in Sources */,
+				FC3FDD562338BD23003FD49B /* JTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

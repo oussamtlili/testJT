@@ -6,9 +6,13 @@ warn("PR is classed as Work in Progress") if github.pr_title.include? "[WIP]"
 warn("Big PR") if git.lines_of_code > 500
 
 # Fail when developer forget // TODO somewhere in the code
-fail("Your forget // TODO in code") if (git.added_files + git.modified_files).any?{ | file| File.readlines(file).grep(/TODO/).size > 0 }
+ #b = git.added_files + git.modified_files
+#fail("Your forget TODO in code") if b.any? { |file|  File.readlines(file).grep("TODO").size > 0 }
 
 # Warn when PR don't contains unit tests
-fail("Unit Tests are very important") if (git.added_files + git.modified_files).all?{ | file| file.include? "test" == false }
+warn("Unit Tests are very important") if (git.added_files + git.modified_files).all? { |file| file.include? "test" == false }
+
+# Fail when developer push .orig files
+fail("Don't push .orig files") if git.added_files.any? {|file| files.end_with? "orig" }
 
 
