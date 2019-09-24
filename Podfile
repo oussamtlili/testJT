@@ -5,7 +5,7 @@ target 'testJT' do
   use_frameworks!
   pod 'SwiftLint'
 
-  # Pods for testJT
+  # Pods for testJ T
 
   target 'testJTTests' do
     inherit! :search_paths
